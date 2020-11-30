@@ -133,19 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='運作原理.html'>Next</a> >> 運作原理<br /><h1>網頁來自Github</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
+    <div id="tipue_search_content">課程內容(HW2) << <a href='課程內容(HW2).html'>Previous</a> <a href='課程內容(HW3).html'>Next</a> >> 課程內容(HW3)<br /><h1>作業之一(分組數列)</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+
+url="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+
+cp1b = []
+
+for line in urllib.request.urlopen(url):
+    cp1b.append(int(line.decode('utf-8').rstrip()))
+
+print(cp1b)</pre>
 <p></p>
-<br />課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='運作原理.html'>Next</a> >> 運作原理</div>
+<p><b>解題說明</b></p>
+<p><b></b>1.導入等等需要用的網址</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request</pre>
+<p><b></b></p>
+<p><b></b>2.列出需要開啟的網址</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">url = (附上所需的網址)</pre>
+<p></p>
+<p>3.設置一個數列</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cpb1 = []</pre>
+<p></p>
+<p>4.將line設為url的無限迴圈，並且將此數列後的編碼line，刪除字尾</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for line in urllib.request.urlopen(url):
+    cp1b.append(int(line.decode('utf-8').rstrip()))</pre>
+<p><b></b></p>
+<p><b></b>5.列出cp1b的結果</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">print(cpb1)</pre>
+<p><strong>跑出來的結果</strong></p>
+<p><strong><img alt="" height="316" src="./../images/截圖.png" width="569"/></strong></p>
+<p>圖上方為數列結果，中間與下方為程式內容。</p>
+<br />課程內容(HW2) << <a href='課程內容(HW2).html'>Previous</a> <a href='課程內容(HW3).html'>Next</a> >> 課程內容(HW3)</div>
         
     <!-- footer -->
       <div class="container">
