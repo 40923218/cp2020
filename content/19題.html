@@ -133,11 +133,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">十二月更新 << <a href='十二月更新.html'>Previous</a> <a href='Customer Relations.html'>Next</a> >> Customer Relations<br /><h1>課程內容(HW1)</h1>
-<p>教材:PC Hardware</p>
-<p>章節:UNI2 Hradware Basics PCH3(Customer Relations)</p>
-<p></p>
-<br />十二月更新 << <a href='十二月更新.html'>Previous</a> <a href='Customer Relations.html'>Next</a> >> Customer Relations</div>
+    <div id="tipue_search_content">課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='25題.html'>Next</a> >> 25題<br /><h1>19題</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
+from bs4 import BeautifulSoup
+
+url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+
+r = requests.get(url)
+soup = BeautifulSoup(r.text)
+文本 = soup.select('p,title')
+
+for t in 文本:
+    print(t.text)</pre>
+<p><span style="color: #ff0000;">心得:<span style="color: #000000;">我這邊來說說我如何學這串程式，我一開始看不懂這串程式，我一行一行慢慢看，並且翻譯，我也在想有沒有別的方法可以寫這串，所以我Google後吸收了一下，打出了上面這串程式，這串程式中還是有一些文檔跑不出來，我還在嘗試解決。</span></span></p>
+<p><span style="color: #ff0000;">備註:<span style="color: #000000;">用kaggle跑不出結果，用下面的圖才能跑出東西</span></span></p>
+<p><span style="color: #ff0000;">結果:</span></p>
+<p><span style="color: #ff0000;"><img alt="" height="318" src="./../images/19題.png" width="565"/></span></p>
+<br />課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='25題.html'>Next</a> >> 25題</div>
         
     <!-- footer -->
       <div class="container">
