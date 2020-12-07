@@ -17,7 +17,7 @@
 <p><span>PythonWork x.x(關於Python練習內容)</span></p>
 <p><span style="color: #ff9900;">十月份更新:八</span><span style="color: #ff0000;">份</span>更新版本</p>
 <p><span style="color: #ff9900;">十一月份更新:<span style="color: #ff0000;">兩份<span style="color: #000000;">更新版本</span></span></span></p>
-<p><span style="color: #ff9900;"><span style="color: #ff0000;"><span><span style="color: #ff9900;">十二月份更新:<span style="color: #ff0000;">尚</span></span>無</span></span></span></p>
+<p><span style="color: #ff9900;"><span style="color: #ff0000;"><span style="color: #ff9900;">十二月份更新:<span style="color: #ff0000;">兩</span></span><span style="color: #ff0000;"><span color="#ff0000" style="color: #ff0000;">份<span style="color: #000000;">更新版本</span></span></span></span></span></p>
 <h2>十月份更新</h2>
 <p>2020/10/12</p>
 <p><span style="color: #ffffff; background-color: #000000;">更新</span></p>
@@ -61,7 +61,15 @@
 <p><span color="#ffffff" style="color: #000000;"><span color="#ffffff"><span color="#ffffff"><span color="#ffffff">(新增<span style="color: #ff0000;">HW2、HW3</span>)HomePage 1.2.2</span></span></span></span></p>
 <p><span style="color: #ffffff; background-color: #000000;">課程更新</span></p>
 <p><span style="color: #000000;">(新增<span style="color: #ff0000;">HW2內容</span>)PythonWork 1.0</span></p>
-<p><span color="#ffffff" style="color: #000000;"></span>  </p>
+<p> </p>
+<h2>十二月更新</h2>
+<p><span color="#ffffff" style="color: #000000;"></span>2020/12/5</p>
+<p><span style="color: #ffffff; background-color: #000000;">課程更新</span></p>
+<p><span>(新增</span><span style="color: #ff0000;">HW3第19題</span><span>)PythonWork1.1</span></p>
+<p><span><span style="color: #000000;">  </span></span></p>
+<p><span style="color: #ffffff; background-color: #000000;">課程更新</span></p>
+<p><span>(新增</span><span style="color: #ff0000;">HW3第25題、各題完成度</span><span>)PythonWork1.2</span></p>
+<p> </p>
 <h1>課程內容(HW1)</h1>
 <p>教材:PC Hardware</p>
 <p>章節:UNI2 Hradware Basics PCH3(Customer Relations)</p>
@@ -435,7 +443,7 @@ print(cp1b)</pre>
 <p><strong><img alt="" height="316" src="/images/截圖.png" width="569"/></strong></p>
 <p>圖上方為數列結果，中間與下方為程式內容。</p>
 <h1>課程內容(HW3)</h1>
-<h2>19題</h2>
+<h2>19題(完成度90%)</h2>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
 from bs4 import BeautifulSoup
 
@@ -447,12 +455,114 @@ soup = BeautifulSoup(r.text)
 
 for t in 文本:
     print(t.text)</pre>
-<p><span style="color: #ff0000;">心得:<span style="color: #000000;">我這邊來說說我如何學這串程式，我一開始看不懂這串程式，我一行一行慢慢看，並且翻譯，我也在想有沒有別的方法可以寫這串，所以我Google後吸收了一下，打出了上面這串程式，這串程式中還是有一些文檔跑不出來，我還在嘗試解決。</span></span></p>
-<p><span style="color: #ff0000;">備註:<span style="color: #000000;">用kaggle跑不出結果，用下面的圖才能跑出東西</span></span></p>
+<p><span style="color: #ff0000;">心得:</span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">我這邊來說說我如何學這串程式，我一開始看不懂這串程式，我一行一行慢慢看，並且翻譯，我也在想有沒有別的方法可以寫這串，所以我Google後吸收了一下，打出了上面這串程式，這串程式中還是有一些文檔跑不出來，我還在嘗試解決。</span></span></p>
+<p><span style="color: #ff0000;">備註:</span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">用kaggle跑不出結果，用<span>小白窗</span>才能跑出東西</span></span></p>
 <p><span style="color: #ff0000;">結果:</span></p>
 <p><span style="color: #ff0000;"><img alt="" height="318" src="/images/19題.png" width="565"/></span></p>
-<h2>25題</h2>
-<h2>26題</h2>
+<h2>25題(完成度100%)</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random,time
+
+start = True
+start2 = True
+
+print("派森醬:嗨嗨~想跟我玩小遊戲嗎~~(回答yes or no)")
+while start: 
+    回答 = input()
+    if "no" in 回答:
+        print("派森醬:不要這樣嘛~~陪我玩嘛~~(回答yes or no)")
+    elif "yes" in 回答:
+        print("派森醬:耶~~~那要來囉")
+        time.sleep(1.5)
+        start = False
+    else:
+        print("(請輸入yes or no)")
+        
+print("派森醬:我們來玩猜數字，我們先來訂個範圍八")
+time.sleep(1.5)
+print("派森醬:先給我一個最小值")
+最小值 = input()
+time.sleep(1.5)
+
+print("派森醬:再給我一個最大值")
+最大值 = input()
+time.sleep(1.5)
+
+print("派森醬:我把眼睛閉起來了，打上你想要給我猜的數字八")
+b = int(input())#答案
+time.sleep(1.5)
+
+a = random.randint(int(最小值),int(最大值))#數字
+
+print("派森醬:那我開始猜囉!!")
+time.sleep(1.5)
+
+while start2:
+    print("派森醬:讓我想想看...")
+    time.sleep(1.5)
+    print("派森醬:是這個數字嗎?(請回答yes or no)",a)
+    回答2 = input()
+    time.sleep(1.5)
+    if "no" in 回答2:
+        print("派森醬:不是嗎?!那是再高還是再低?(請回答 hight 或 lower )")
+        回答3 = input()
+        #time.sleep(1.5)
+        if "hight" in 回答3 and a &lt; b:
+            最小值 = a
+            a = random.randint(int(最小值),int(最大值))
+        elif "lower" in 回答3 and a &gt; b:
+            最大值 = a
+            a = random.randint(int(最小值),int(最大值))
+        else:
+            print("(請輸入 hight or lower)")
+    elif "yes" in 回答2:
+        start2 = False
+    else:
+        print("(請輸入yes or no)")
+        
+print("派森醬:耶~~猜到了~~")
+time.sleep(1.5)
+print("派森醬:謝謝你陪我玩，下次見~~")</pre>
+<p><span style="color: #ff0000;">心得:</span></p>
+<p>這次我跟上一題一樣，先複製解答來推倒程式中的邏輯，最後完成出第一號程式碼，但是，元程式碼是用(其實我自己也不太確定)猜測數做加減來給出答案，於是我就在想能不能改用縮小猜測範圍來給出答案，於是產生出上面的程式碼，與原程式碼多了七行，但是改變了猜測方式，而且多了自訂義範圍，程式成功跑出來的時候，真的是很開心，開始覺得Python很有趣了。</p>
+<p><span style="color: #ff0000;">備註:</span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">用kaggle可以跑中文回復，用小白窗只能跑英文回復</span></span></p>
+<p><span style="color: #ff0000;">結果:</span></p>
+<p><span style="color: #ff0000;"><img alt="" height="866" src="/images/25題.png" width="511"/></span></p>
+<h3>猜數字測試</h3>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
+
+print("test,輸入答案")
+b = int(input())#答案
+
+print("輸入最大值")
+最大值 = input("最大值=")
+
+print("輸入最小值")
+最小值 = input("最小值=")
+a = random.randint(int(最小值),int(最大值))#數字
+start = True
+
+while start:
+    print(a)
+    if a &lt; b:
+        print("再高")
+        最小值 = a
+        a = random.randint(int(最小值),int(最大值))
+    elif a &gt; b:
+        print("再低")
+        最大值 = a
+        a = random.randint(int(最小值),int(最大值))
+    elif a == b:
+        print(a)
+        start = False
+print("完成")</pre>
+<p><span style="color: #ff0000;">解釋:</span></p>
+<p><span style="color: #000000;">輸入答案、最小值和最大值後，丟入迴圈進行判斷，當猜測的數字小於答案時，就將該猜測數字更改為最小值，反之，<span>當猜測的數字大於答案時，就將該猜測數字更改為最大值，直到猜中答案，結束程式。</span></span></p>
+<p><span style="color: #ff0000;">結果:</span></p>
+<p><span style="color: #000000;"><img alt="" height="847" src="/images/25題-2.png" width="550"/></span></p>
+<h2>26題(完成度0%)</h2>
 <h1>網頁來自Github</h1>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4>利用 cmsimde 建立靜態網誌方法:</h4>

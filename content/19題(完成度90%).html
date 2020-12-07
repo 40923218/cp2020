@@ -133,15 +133,25 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">首頁 << <a href='首頁.html'>Previous</a> <a href='十月份更新.html'>Next</a> >> 十月份更新<br /><h1>關於更新</h1>
-<p><span style="color: #ff9900;">更新版本介紹:</span></p>
-<p>Hardware Basics PCH3 x.x up date(關於<span>Hardware Basics PCH3的</span>課程內容更新)</p>
-<p>HomePage x.x (首頁更新)</p>
-<p><span>PythonWork x.x(關於Python練習內容)</span></p>
-<p><span style="color: #ff9900;">十月份更新:八</span><span style="color: #ff0000;">份</span>更新版本</p>
-<p><span style="color: #ff9900;">十一月份更新:<span style="color: #ff0000;">兩份<span style="color: #000000;">更新版本</span></span></span></p>
-<p><span style="color: #ff9900;"><span style="color: #ff0000;"><span style="color: #ff9900;">十二月份更新:<span style="color: #ff0000;">兩</span></span><span style="color: #ff0000;"><span color="#ff0000" style="color: #ff0000;">份<span style="color: #000000;">更新版本</span></span></span></span></span></p>
-<br />首頁 << <a href='首頁.html'>Previous</a> <a href='十月份更新.html'>Next</a> >> 十月份更新</div>
+    <div id="tipue_search_content">課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='25題(完成度100%).html'>Next</a> >> 25題(完成度100%)<br /><h1>19題(完成度90%)</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
+from bs4 import BeautifulSoup
+
+url = "http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture"
+
+r = requests.get(url)
+soup = BeautifulSoup(r.text)
+文本 = soup.select('p,title')
+
+for t in 文本:
+    print(t.text)</pre>
+<p><span style="color: #ff0000;">心得:</span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">我這邊來說說我如何學這串程式，我一開始看不懂這串程式，我一行一行慢慢看，並且翻譯，我也在想有沒有別的方法可以寫這串，所以我Google後吸收了一下，打出了上面這串程式，這串程式中還是有一些文檔跑不出來，我還在嘗試解決。</span></span></p>
+<p><span style="color: #ff0000;">備註:</span></p>
+<p><span style="color: #ff0000;"><span style="color: #000000;">用kaggle跑不出結果，用<span>小白窗</span>才能跑出東西</span></span></p>
+<p><span style="color: #ff0000;">結果:</span></p>
+<p><span style="color: #ff0000;"><img alt="" height="318" src="./../images/19題.png" width="565"/></span></p>
+<br />課程內容(HW3) << <a href='課程內容(HW3).html'>Previous</a> <a href='25題(完成度100%).html'>Next</a> >> 25題(完成度100%)</div>
         
     <!-- footer -->
       <div class="container">
