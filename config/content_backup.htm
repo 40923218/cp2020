@@ -17,7 +17,7 @@
 <p><span>PythonWork x.x(關於Python練習內容)</span></p>
 <p><span style="color: #ff9900;">十月份更新:八</span><span style="color: #ff0000;">份</span>更新版本</p>
 <p><span style="color: #ff9900;">十一月份更新:<span style="color: #ff0000;">兩份<span style="color: #000000;">更新版本</span></span></span></p>
-<p><span style="color: #ff9900;"><span style="color: #ff0000;"><span style="color: #ff9900;">十二月份更新:<span style="color: #ff0000;">兩</span></span><span style="color: #ff0000;"><span color="#ff0000" style="color: #ff0000;">份<span style="color: #000000;">更新版本</span></span></span></span></span></p>
+<p><span style="color: #ff9900;"><span style="color: #ff0000;"><span style="color: #ff9900;">十二月份更新:<span style="color: #ff0000;">三</span></span><span style="color: #ff0000;"><span color="#ff0000" style="color: #ff0000;">份<span style="color: #000000;">更新版本</span></span></span></span></span></p>
 <h2>十月份更新</h2>
 <p>2020/10/12</p>
 <p><span style="color: #ffffff; background-color: #000000;">更新</span></p>
@@ -442,8 +442,11 @@ print(cp1b)</pre>
 <p><strong>跑出來的結果</strong></p>
 <p><strong><img alt="" height="316" src="/images/截圖.png" width="569"/></strong></p>
 <p>圖上方為數列結果，中間與下方為程式內容。</p>
+<h2>作業之二()</h2>
+<h2>作業之三()</h2>
 <h1>課程內容(HW3)</h1>
-<h2>19題(完成度90%)</h2>
+<h2>19題</h2>
+<p><span style="color: #ff0000;"><strong>(完成度90%)</strong></span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
 from bs4 import BeautifulSoup
 
@@ -461,7 +464,8 @@ for t in 文本:
 <p><span style="color: #ff0000;"><span style="color: #000000;">用kaggle跑不出結果，用<span>小白窗</span>才能跑出東西</span></span></p>
 <p><span style="color: #ff0000;">結果:</span></p>
 <p><span style="color: #ff0000;"><img alt="" height="318" src="/images/19題.png" width="565"/></span></p>
-<h2>25題(完成度100%)</h2>
+<h2>25題</h2>
+<p><span style="color: #ff0000;"><strong>(完成度100%)</strong></span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random,time
 
 start = True
@@ -562,7 +566,58 @@ print("完成")</pre>
 <p><span style="color: #000000;">輸入答案、最小值和最大值後，丟入迴圈進行判斷，當猜測的數字小於答案時，就將該猜測數字更改為最小值，反之，<span>當猜測的數字大於答案時，就將該猜測數字更改為最大值，直到猜中答案，結束程式。</span></span></p>
 <p><span style="color: #ff0000;">結果:</span></p>
 <p><span style="color: #000000;"><img alt="" height="847" src="/images/25題-2.png" width="550"/></span></p>
-<h2>26題(完成度0%)</h2>
+<h2>26題</h2>
+<p><strong><span style="color: #ff0000;">(完成度60%)</span></strong></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def checkGrid(grid):
+ 
+    for x in range(0,3):
+        row = set([grid[x][0],grid[x][1],grid[x][2]])
+        if len(row) == 1 and grid[x][0] != 0:
+            return grid[x][0]
+
+    for x in range(0,3):
+        column = set([grid[0][x],grid[1][x],grid[2][x]])
+        if len(column) == 1 and grid[0][x] != 0:
+            return grid[0][x]
+
+    diag1 = set([grid[0][0],grid[1][1],grid[2][2]])
+    diag2 = set([grid[0][2],grid[1][1],grid[2][0]])
+    if len(diag1) == 1 or len(diag2) == 1 and grid[1][1] != 0:
+        return grid[1][1]
+
+    return 0
+
+winner_is_2 = [
+[2, 2, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+winner_is_1 = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+
+winner_is_also_1 = [
+[0, 1, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+
+no_winner = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 2]]
+
+also_no_winner = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 0]]
+
+print(checkGrid(winner_is_2))</pre>
+<p><span style="color: #ff0000;">心得:<span style="color: #000000;">這題我到目前我還沒有理解，我需要花點時間來爬文，就現在來說，我要研究這串程式究竟在說什麼。</span></span></p>
+<p><span style="color: #ff0000;"><span>備註:<span style="color: #000000;">kaggle我這裡沒有跑，我不確定跑起來是否有問題。</span></span></span></p>
+<p><span style="color: #ff0000;"><span>結果:</span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&gt;y:\python38\pythonw.exe -u "26題.py"
+2
+&gt;Exit code: 0</pre>
 <h1>網頁來自Github</h1>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4>利用 cmsimde 建立靜態網誌方法:</h4>

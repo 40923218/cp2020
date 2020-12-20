@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='關於更新.html'>關於更新</a><ul class='dropdown'><li><a href='十月份更新.html'>十月份更新</a><li><a href='十一月更新.html'>十一月更新</a><li><a href='十二月更新.html'>十二月更新</a></li></ul><li class='has-children'><a href='課程內容(HW1).html'>課程內容(HW1)</a><ul class='dropdown'><li><a href='Customer Relations.html'>Customer Relations</a><li><a href='Overview.html'>Overview</a><li class='has-children'><a href='Operational Procedures.html'>Operational Procedures</a><ul class='dropdown'><li><a href='Customer Service Key Principles.html'>Customer Service Key Principles</a></li></ul><li class='has-children'><a href='Effective Listening.html'>Effective Listening</a><ul class='dropdown'><li><a href='Listening skills.html'>Listening skills</a></li></ul><li class='has-children'><a href='Taking Ownership.html'>Taking Ownership</a><ul class='dropdown'><li><a href='Apologizing When Appropriate.html'>Apologizing When Appropriate</a><li><a href='Show Empathy.html'>Show Empathy</a></li></ul><li class='has-children'><a href='Remain Courteous and Professional.html'>Remain Courteous and Professional</a><ul class='dropdown'><li><a href='Timeliness.html'>Timeliness</a><li><a href='Keeping the Customer Informed.html'>Keeping the Customer Informed</a></li></ul><li><a href='Problem Resolution and Follow-Up.html'>Problem Resolution and Follow-Up</a><li><a href='Proper Treatment of a Customer’s Property.html'>Proper Treatment of a Customer’s Property</a><li><a href='Putting it All Together.html'>Putting it All Together</a></li></ul><li class='has-children'><a href='課程內容(HW2).html'>課程內容(HW2)</a><ul class='dropdown'><li><a href='作業之一(分組數列).html'>作業之一(分組數列)</a></li></ul><li class='has-children'><a href='課程內容(HW3).html'>課程內容(HW3)</a><ul class='dropdown'><li><a href='19題.html'>19題</a><li class='has-children'><a href='25題.html'>25題</a><ul class='dropdown'><li><a href='猜數字測試.html'>猜數字測試</a></li></ul><li><a href='26題.html'>26題</a></li></ul><li class='has-children'><a href='網頁來自Github.html'>網頁來自Github</a><ul class='dropdown'><li><a href='運作原理.html'>運作原理</a></li>
+                     <li><a href='首頁.html'>首頁</a><li class='has-children'><a href='關於更新.html'>關於更新</a><ul class='dropdown'><li><a href='十月份更新.html'>十月份更新</a><li><a href='十一月更新.html'>十一月更新</a><li><a href='十二月更新.html'>十二月更新</a></li></ul><li class='has-children'><a href='課程內容(HW1).html'>課程內容(HW1)</a><ul class='dropdown'><li><a href='Customer Relations.html'>Customer Relations</a><li><a href='Overview.html'>Overview</a><li class='has-children'><a href='Operational Procedures.html'>Operational Procedures</a><ul class='dropdown'><li><a href='Customer Service Key Principles.html'>Customer Service Key Principles</a></li></ul><li class='has-children'><a href='Effective Listening.html'>Effective Listening</a><ul class='dropdown'><li><a href='Listening skills.html'>Listening skills</a></li></ul><li class='has-children'><a href='Taking Ownership.html'>Taking Ownership</a><ul class='dropdown'><li><a href='Apologizing When Appropriate.html'>Apologizing When Appropriate</a><li><a href='Show Empathy.html'>Show Empathy</a></li></ul><li class='has-children'><a href='Remain Courteous and Professional.html'>Remain Courteous and Professional</a><ul class='dropdown'><li><a href='Timeliness.html'>Timeliness</a><li><a href='Keeping the Customer Informed.html'>Keeping the Customer Informed</a></li></ul><li><a href='Problem Resolution and Follow-Up.html'>Problem Resolution and Follow-Up</a><li><a href='Proper Treatment of a Customer’s Property.html'>Proper Treatment of a Customer’s Property</a><li><a href='Putting it All Together.html'>Putting it All Together</a></li></ul><li class='has-children'><a href='課程內容(HW2).html'>課程內容(HW2)</a><ul class='dropdown'><li><a href='作業之一(分組數列).html'>作業之一(分組數列)</a><li><a href='作業之二().html'>作業之二()</a><li><a href='作業之三().html'>作業之三()</a></li></ul><li class='has-children'><a href='課程內容(HW3).html'>課程內容(HW3)</a><ul class='dropdown'><li><a href='19題.html'>19題</a><li class='has-children'><a href='25題.html'>25題</a><ul class='dropdown'><li><a href='猜數字測試.html'>猜數字測試</a></li></ul><li><a href='26題.html'>26題</a></li></ul><li class='has-children'><a href='網頁來自Github.html'>網頁來自Github</a><ul class='dropdown'><li><a href='運作原理.html'>運作原理</a></li>
                       </ul>
                 </nav>
               </div>
@@ -134,7 +134,57 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">猜數字測試 << <a href='猜數字測試.html'>Previous</a> <a href='網頁來自Github.html'>Next</a> >> 網頁來自Github<br /><h1>26題</h1>
-<p><strong><span style="color: #ff0000;">(完成度0%)</span></strong></p>
+<p><strong><span style="color: #ff0000;">(完成度60%)</span></strong></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def checkGrid(grid):
+ 
+    for x in range(0,3):
+        row = set([grid[x][0],grid[x][1],grid[x][2]])
+        if len(row) == 1 and grid[x][0] != 0:
+            return grid[x][0]
+
+    for x in range(0,3):
+        column = set([grid[0][x],grid[1][x],grid[2][x]])
+        if len(column) == 1 and grid[0][x] != 0:
+            return grid[0][x]
+
+    diag1 = set([grid[0][0],grid[1][1],grid[2][2]])
+    diag2 = set([grid[0][2],grid[1][1],grid[2][0]])
+    if len(diag1) == 1 or len(diag2) == 1 and grid[1][1] != 0:
+        return grid[1][1]
+
+    return 0
+
+winner_is_2 = [
+[2, 2, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+winner_is_1 = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+
+winner_is_also_1 = [
+[0, 1, 0],
+	[2, 1, 0],
+	[2, 1, 1]]
+
+no_winner = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 2]]
+
+also_no_winner = [
+[1, 2, 0],
+	[2, 1, 0],
+	[2, 1, 0]]
+
+print(checkGrid(winner_is_2))</pre>
+<p><span style="color: #ff0000;">心得:<span style="color: #000000;">這題我到目前我還沒有理解，我需要花點時間來爬文，就現在來說，我要研究這串程式究竟在說什麼。</span></span></p>
+<p><span style="color: #ff0000;"><span>備註:<span style="color: #000000;">kaggle我這裡沒有跑，我不確定跑起來是否有問題。</span></span></span></p>
+<p><span style="color: #ff0000;"><span>結果:</span></span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&gt;y:\python38\pythonw.exe -u "26題.py"
+2
+&gt;Exit code: 0</pre>
 <br />猜數字測試 << <a href='猜數字測試.html'>Previous</a> <a href='網頁來自Github.html'>Next</a> >> 網頁來自Github</div>
         
     <!-- footer -->
