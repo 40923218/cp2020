@@ -70,6 +70,9 @@
 <p><span style="color: #ffffff; background-color: #000000;">課程更新</span></p>
 <p><span>(新增</span><span style="color: #ff0000;">HW3第25題、各題完成度</span><span>)PythonWork1.2</span></p>
 <p> </p>
+<p><span style="color: #ffffff; background-color: #000000;">課程更新</span></p>
+<p><span>(新增</span><span style="color: #ff0000;">HW3第26題</span><span>)PythonWork1.3</span></p>
+<p> </p>
 <h1>課程內容(HW1)</h1>
 <p>教材:PC Hardware</p>
 <p>章節:UNI2 Hradware Basics PCH3(Customer Relations)</p>
@@ -412,37 +415,31 @@
 <p><strong>前言</strong></p>
 <p>對於我來說，Python是個陌生人，但是現在，我要去了解他，使其成互利關係。</p>
 <h2>作業之一(分組數列)</h2>
+<p><strong>題目:列出甲班分組數列</strong></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+from random import shuffle
 
-url="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"
+cp1a = []
+for line in urllib.request.urlopen(target_url):
+    cp1a.append(line.decode('utf-8').rstrip())
 
-cp1b = []
+#以上為導出網址中的數列
 
-for line in urllib.request.urlopen(url):
-    cp1b.append(int(line.decode('utf-8').rstrip()))
+shuffle(cp1a)
+n = 5
+m = int(len(cp1a)/n)
+list2 = []
+for i in range(0, len(cp1a), m):
+    list2.append(cp1a[i:i+m])
+print(list2)
 
-print(cp1b)</pre>
-<p></p>
-<p><b>解題說明</b></p>
-<p><b></b>1.導入等等需要用的網址</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request</pre>
-<p><b></b></p>
-<p><b></b>2.列出需要開啟的網址</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">url = (附上所需的網址)</pre>
-<p></p>
-<p>3.設置一個數列</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cpb1 = []</pre>
-<p></p>
-<p>4.將line設為url的無限迴圈，並且將此數列後的編碼line，刪除字尾</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for line in urllib.request.urlopen(url):
-    cp1b.append(int(line.decode('utf-8').rstrip()))</pre>
-<p><b></b></p>
-<p><b></b>5.列出cp1b的結果</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">print(cpb1)</pre>
+#以上為數列打亂後重新分組</pre>
+<p><br/><br/></p>
 <p><strong>跑出來的結果</strong></p>
-<p><strong><img alt="" height="316" src="/images/截圖.png" width="569"/></strong></p>
+<p><img alt="" height="386" src="/images/輸出結果.png" width="305"/></p>
 <p>圖上方為數列結果，中間與下方為程式內容。</p>
-<h2>作業之二()</h2>
+<h2>作業之二(是否有加退選)</h2>
 <h2>作業之三()</h2>
 <h1>課程內容(HW3)</h1>
 <h2>19題</h2>
